@@ -1,4 +1,5 @@
 import java.util.Set;
+import java.util.TreeSet;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -46,5 +47,16 @@ public class App {
         for( String elemento : ejemploTreeSetComparado){
             System.out.println(elemento);
         }
+    }
+
+    private static void runEjercicioContacto(){
+        /*Sets sets = new Sets();
+        Set<Contacto> agenda = new TreeSet<>(new ContactoComparator());
+
+        System.out.println("-------- TreeSet con Comparador --------");
+        System.out.println("Elementos del TreeSet (Orden por longitud y luego alfabeticamente (Uso de metodo sobreEscrito)):");
+        for( String elemento : ejemploTreeSetComparado){
+            System.out.println(elemento);
+        }*/
     }
 }

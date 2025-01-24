@@ -7,7 +7,6 @@ import java.util.TreeSet;
 public class Sets {
     //HashSet es un conjuto de elementos que NO mantiene orden
     public Sets(){
-
     }
 
     //LinkedHashet mantiene el orden
@@ -81,7 +80,7 @@ public class Sets {
         miTreeSetComparador.add("Fresa");
 
         return miTreeSetComparador;
-
-
     }
+
+
 }
