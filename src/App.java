@@ -1,12 +1,14 @@
 import java.util.Set;
 import java.util.TreeSet;
 
+import models.Contacto;
+
 public class App {
     public static void main(String[] args) throws Exception {
-        runHashSet();     
+        /*runHashSet();     
         runLinkedHashSet();      
         runTreeSet();      
-        runTreeSetComparado();      
+        runTreeSetComparado();   */   
         runEjercicio();                                     
     }
 
@@ -70,21 +72,19 @@ public class App {
 
         System.out.println("Referencia en memoria:");
         boolean comparacionReferencia = c1 == c2;
-
         System.out.println(comparacionReferencia);
-        System.out.println("c1:" + c1 + "== c2:" + c2 + " = " + comparacionReferencia);
+        System.out.println("c1:" + c1 + " == c2:" + c2 + " = " + comparacionReferencia);
 
         
         System.out.println("Comparacion con equals:");
-        System.out.println(c1.equals(c2));
         boolean comparacionEquals = c1.equals(c2);
         System.out.println(comparacionEquals);
-        System.out.println("c1:" + c1 + "== c2:" + c2 + " = " + comparacionEquals);
+        System.out.println("c1:" + c1 + " == c2:" + c2 + " = " + comparacionEquals);
 
         System.out.println("Comparacion de hashCode:");
         boolean comparacionHashCode = c1.hashCode() == c2.hashCode();
         System.out.println(comparacionHashCode);
-
+        System.out.println("c1:" + c1 + " == c2:" + c2 + " = " + comparacionHashCode);
 
 
     }
