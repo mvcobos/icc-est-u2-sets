@@ -64,11 +64,21 @@ public class App {
     }*/
 
     private static void runEjercicio(){
-        //Set<Contacto> agenda = new TreeSet<>(new ContactoComparator());
-        System.out.println("-----LISTA CONTACTOS----");
-        Contacto c1 = new Contacto("Pedro", "Lopez", "123456789");
-        Contacto c2 = new Contacto("Pedro", "Lopez", "123456789");
+        Set<Contacto> agenda = new TreeSet<>(new ContactoComparator());
 
+        // Agregamos algunos contactos
+        agenda.add(new Contacto("Pedro", "Lopez", "222222222"));
+        agenda.add(new Contacto("Luis", "Perez", "111111111"));
+        agenda.add(new Contacto("Ana", "Perez", "987654321"));
+        agenda.add(new Contacto("Pedro", "Lopez", "123456789"));
+
+        for( Contacto elemento : agenda){
+            System.out.println(elemento);
+        }
+
+
+        /*Contacto c1 = new Contacto("Pedro", "Lopez", "123456789");
+        Contacto c2 = new Contacto("Pedro", "Lopez", "123456789");
 
         System.out.println("Referencia en memoria:");
         boolean comparacionReferencia = c1 == c2;
@@ -84,8 +94,7 @@ public class App {
         System.out.println("Comparacion de hashCode:");
         boolean comparacionHashCode = c1.hashCode() == c2.hashCode();
         System.out.println(comparacionHashCode);
-        System.out.println("c1:" + c1 + " == c2:" + c2 + " = " + comparacionHashCode);
-
+        System.out.println("c1:" + c1 + " == c2:" + c2 + " = " + comparacionHashCode);*/
 
     }
 }
