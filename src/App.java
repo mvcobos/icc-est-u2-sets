@@ -8,7 +8,7 @@ public class App {
         /*runHashSet();     
         runLinkedHashSet();      
         runTreeSet();      
-        runTreeSetComparado();   */   
+        runTreeSetComparado();*/   
         runEjercicio();                                     
     }
 
